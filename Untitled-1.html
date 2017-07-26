@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<a href="#" id="perm">request permission</a>
+<a href="#" id="trigger">trigger</a>
+
+<script>
+	var perm = document.getElementById('perm');
+	var trigger = document.getElementById('trigger');
+	 perm.addEventListener('click',function(e)
+						  e.preventDefault();
+						   if(!window.Notification())
+	 {
+		 alert('sorry notifications are not suported');
+	 }
+	else
+		{
+			Notification.requestPermission(function(p){
+				console.log(p);
+			})
+		});
+	
+	</script>
+</body>
+</html>
