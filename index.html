@@ -4,18 +4,17 @@
   <title>Login form shake effect</title>
   
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
-<script>
-var OneSignal = window.OneSignal || [];
-OneSignal.push(["init", {
-               appId: "YOUR_APP_ID",
-               autoRegister: false, /* Set to true to automatically prompt visitors */
-               httpPermissionRequest: {
-               enable: true
-               },
-               notifyButton: {
-               enable: true /* Set to false to hide */
-               }
-               }]);
+<script type="text/javascript">
+    (function(p,u,s,h){
+        p._pcq=p._pcq||[];
+        p._pcq.push(['_currentTime',Date.now()]);
+        s=u.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.src='https://cdn.pushcrew.com/js/3c523ccdc5e96c7db2a1fa7fcc1fe590.js';
+        h=u.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+    })(window,document);
 </script>
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 
